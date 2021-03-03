@@ -1,0 +1,119 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primary: darkcyan;
+}
+
+/*Section 1*/
+
+.s1 div :first-child {
+    color: red;
+}
+
+.s1 div :last-child {
+    color: blue;
+}
+
+
+/* Section 2*/
+
+.s2 div :nth-child(even) {
+    color: red;
+}
+
+.s2 div :nth-child(3) {
+    color: blue;
+}
+
+
+/* Section 3*/
+
+.s3 div p:nth-of-type(2) {
+    color: red;
+}
+
+.s3 div p:nth-last-of-type(3) {
+    color: blue;
+}
+
+
+/* Section 4*/
+
+.s4 div :only-child {
+    color: red;
+}
+
+.s5 div span:only-of-type {
+    color: blue;
+}
+
+
+/* Links*/
+
+#links li a:visited {
+    color: green;
+}
+
+#links li a {
+    color: red;
+}
+
+#links li a:hover {
+    color: violet;
+}
+
+/* pseudo elementos */
+
+#cuadrote {
+    width: 500px;
+    height: 200px;
+    background-color:teal ;
+}
+
+#cuadrote::before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 500px;
+    background-color: tomato;
+}
+
+#cuadrote::after {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 500px;
+    background-color: slateblue;
+}
+
+.exciting-text::before {
+    content: "EXCITING! -> ";
+    color: green;
+}
+
+.boring-text::after {
+    content: " <- BORING";
+    color: red;
+}
+
+.inpt:invalid {
+    border: red 2px double;
+    transition: 0.5s;
+}
+
+.inpt:valid {
+    border: green 2px double;
+    transition: 0.5s;
+}
+
+.inpt:required {
+    border: goldenrod 1px double;
+    transition: 0.5s;
+}
+
+.ipnt:focus {
+    border: royalblue 3px double;
+}
+
